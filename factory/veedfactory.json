@@ -1,0 +1,9 @@
+{
+	"name": "veedfactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d05abd14-92ef-4005-a776-7c516f67b177",
+		"tenantId": "c1c4c457-06f2-42b1-bb95-1a1db38ab186"
+	}
+}

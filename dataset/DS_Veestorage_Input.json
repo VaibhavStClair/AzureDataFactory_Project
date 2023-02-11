@@ -1,0 +1,41 @@
+{
+	"name": "DS_Veestorage_Input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedService_VeeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Sample Data.csv",
+				"container": "veecontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "user_id",
+				"type": "String"
+			},
+			{
+				"name": "event_name",
+				"type": "String"
+			},
+			{
+				"name": "event_date",
+				"type": "String"
+			},
+			{
+				"name": "country",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

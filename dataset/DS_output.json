@@ -1,0 +1,36 @@
+{
+	"name": "DS_output",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Output_SQLDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "event_name",
+				"type": "varchar"
+			},
+			{
+				"name": "country",
+				"type": "varchar"
+			},
+			{
+				"name": "total",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "indexnum",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "output_from_adf"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
